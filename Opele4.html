@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <meta name="color-scheme" content="dark" />
+  <title>On The Mat with Opélé — Lesson 4: Pair Notation / Seniority | SwamiG Institute</title>
+  <meta name="description" content="On The Mat with Opélé — Lesson 4 of 16: Pair Notation/Seniority. Identify first pair of Odu as Ibi or Ire based on seniority. Daily Opélé practice and documentation." />
+
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --ink:#eaeaf2;
+      --muted:#b5b5c4;
+      --accent:#bb66ff;
+      --accent-muted:rgba(187,102,255,0.18);
+      --radius:20px;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font:400 16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(1200px 800px at 20% -10%, rgba(102,255,178,.08), transparent 60%),
+        radial-gradient(1000px 700px at 120% 20%, rgba(187,102,255,.10), transparent 40%),
+        var(--bg);
+    }
+    a{color:var(--ink); text-decoration:none; border-bottom:1px dashed rgba(234,234,242,.4)}
+    a:hover{opacity:.9}
+    img{max-width:100%; height:auto; display:block}
+
+    header{
+      position:sticky; top:0; z-index:10;
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      padding:10px 18px;
+      backdrop-filter:saturate(180%) blur(10px);
+      background:rgba(11,11,15,.55);
+      border-bottom:1px solid rgba(255,255,255,.06);
+      flex-wrap:wrap;
+    }
+    .brand{display:flex; align-items:center; gap:12px}
+    .brand img{width:44px; height:44px; border-radius:50%; box-shadow:var(--shadow)}
+    .brand .name{font-weight:800; letter-spacing:.2px}
+    .brand .sub{font-size:12px; color:var(--muted)}
+    nav{display:flex; flex-wrap:wrap; gap:12px}
+    nav a{font-weight:600; font-size:14px; color:var(--muted); padding:6px 10px; border-radius:8px}
+    nav a.active{color:var(--accent); border-bottom:2px solid var(--accent)}
+    nav a.cta{color:var(--ink); border:1px solid rgba(234,234,242,.18); background:rgba(187,102,255,.15)}
+
+    .wrap{max-width:1100px; margin:0 auto; padding:28px 18px 72px}
+    .card{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:20px;
+      box-shadow:var(--shadow);
+      padding:22px;
+      margin-bottom:18px;
+    }
+    .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:24px; align-items:center; margin-top:14px}
+    @media (max-width:880px){.hero{grid-template-columns:1fr}}
+    h1{font-size:clamp(28px,4.6vw,44px); line-height:1.12; margin:0 0 8px}
+    h2{font-size:clamp(22px,3.2vw,32px); margin:0 0 12px}
+    .tag{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px; background:var(--accent-muted); color:#111827; font-weight:800; font-size:12px}
+    .muted{color:var(--muted)}
+    .small{font-size:12px}
+    .grid{display:grid; gap:18px}
+    .grid.cols-2{grid-template-columns:1fr 1fr}
+    @media (max-width:880px){.grid.cols-2{grid-template-columns:1fr}}
+    ul.list{margin:0; padding-left:18px}
+    ul.list li{margin-bottom:8px}
+    .pill{display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); margin:4px 6px 0 0; font-size:13px}
+    .callout{border-left:3px solid var(--accent); padding:12px 16px; background:rgba(187,102,255,.10); border-radius:12px}
+    .odu-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px}
+    .odu-item{padding:10px; border:1px solid rgba(255,255,255,.1); border-radius:12px; background:rgba(255,255,255,.03)}
+    footer{margin-top:48px; padding:30px; font-size:14px; color:var(--muted); text-align:center}
+    .watermark{opacity:.22; font-size:12px; text-align:center; margin-top:38px}
+    .download{margin-top:16px}
+    .download a{display:inline-block; padding:10px 14px; border-radius:12px; background:rgba(187,102,255,.15); border:1px solid rgba(255,255,255,.2); font-weight:700; color:var(--ink)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <a href="https://swamiginstitute.com" target="_blank" rel="noopener">
+        <img src="https://swamiginstitute.github.io/SwamiG.gif" alt="SwamiG Institute logo" />
+      </a>
+      <div>
+        <div class="name">SwamiG Institute</div>
+        <div class="sub">“…on the shoulders of enlightened ancestors..” — 70-888-Swami</div>
+      </div>
+    </div>
+    <nav>
+      <a href="Opele1.pdf">Lesson 1</a>
+      <a href="Opele2.pdf">Lesson 2</a>
+      <a href="Opele3.pdf">Lesson 3</a>
+      <a href="Opele4.pdf" class="active">Lesson 4</a>
+      <a href="Opele5.pdf">Lesson 5</a>
+      <a href="#protocol">Protocol</a>
+      <a href="#submit" class="cta">Submit</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card">
+        <span class="tag">On The Mat • Opélé</span>
+        <h1>Lesson 4 of 16 — “Pair Notation / Seniority”</h1>
+        <p class="muted">Identify the first pair of Odu as <strong>Ibi</strong> or <strong>Ire</strong> by comparing its seniority to the second pair. Keep notation consistent and objective.</p>
+        <div>
+          <span class="pill">Opélé Technique</span>
+          <span class="pill">Pair Notation</span>
+          <span class="pill">Seniority</span>
+          <span class="pill">Daily Practice</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Download</h2>
+        <p class="muted small">Main directory files</p>
+        <p><a class="download" href="Opele4.pdf" download>? Download Lesson 4 PDF</a></p>
+        <h3>Contact</h3>
+        <p><strong>Email:</strong> <a href="mailto:Baba@swamiginstitute.com">Baba@swamiginstitute.com</a><br>
+           <span class="small muted">Call: 70-888-Swami</span></p>
+      </div>
+    </section>
+
+    <!-- LESSON SUMMARY -->
+    <section id="lesson" class="card" style="margin-top:22px">
+      <h2>Lesson Summary</h2>
+      <p>Mark each Odu using single or double dots from right to left. Cast Opélé four times per day for ten consecutive days, marking Odu and noting the <strong>Ibi/Ire</strong> character of the first pair relative to the second.</p>
+      <div class="callout">
+        <p class="small muted">Exercise: Determine seniority between first and second Odu pairs. Document results faithfully.</p>
+      </div>
+    </section>
+
+    <!-- ODU PAIRS -->
+    <section id="protocol" class="card" style="margin-top:22px">
+      <h2>Odu Pairs for Practice</h2>
+      <div class="odu-grid">
+        <div class="odu-item">OGBE OFUN / OBARA OGBE</div>
+        <div class="odu-item">OSHE OBARA / OGBE OGBE</div>
+        <div class="odu-item">ODI OSA / IROSUN ODI</div>
+        <div class="odu-item">OBARA OBARA / ODI IROSUN</div>
+        <div class="odu-item">OBARA IROSUN / OSHE OYEKU</div>
+        <div class="odu-item">OSHE ODI / OGBE OSHE</div>
+        <div class="odu-item">OSHE OGUNDA / ODI IROSUN</div>
+        <div class="odu-item">IROSUN OGUNDA / OGBE OBARA</div>
+        <div class="odu-item">OGBE OFUN / OFUN OBARA</div>
+        <div class="odu-item">OSHE OBARA / OGBE MEJI</div>
+        <div class="odu-item">ODI OSA / IROSUN ODI</div>
+        <div class="odu-item">OBARA OBARA / ODI IROSUN</div>
+        <div class="odu-item">IROSUN ODI / IROSUN OSHE</div>
+        <div class="odu-item">OBARA MEJI / OBARA OGBE</div>
+        <div class="odu-item">OGBE OSHE / OBARA OGBE</div>
+        <div class="odu-item">OFUN OWORIN / OBARA MEJI</div>
+        <div class="odu-item">IROSUN OSHE / OGBE OBARA</div>
+        <div class="odu-item">OBARA MEJI / ODI OSHE</div>
+        <div class="odu-item">OBARA IROSUN / OFUN OBARA</div>
+        <div class="odu-item">OSHE OBARA / OBARA OGUNDA</div>
+      </div>
+    </section>
+
+    <!-- SUBMISSION -->
+    <section id="submit" class="card" style="margin-top:22px">
+      <h2>Daily Submission</h2>
+      <p>Submit your daily notes by email to <a href="mailto:Baba@swamiginstitute.com">Baba@swamiginstitute.com</a>. Include:</p>
+      <ul class="list">
+        <li>Date, time, and session number</li>
+        <li>Each Odu pair cast with single/double dot notation</li>
+        <li>Classification of first pair as Ibi or Ire</li>
+        <li>Reflection on seniority insights</li>
+      </ul>
+      <p class="muted small">Keep steady—these practices prepare you for the milestone ahead. <em>Successful completion of Lesson 5 with 50+ hours of documented practice qualifies you to apply for Certification in Opélé Divination</em> through the SwamiG Institute.</p>
+    </section>
+
+    <div class="watermark">supported by Amen(Obara)/Heru(Oyeku)</div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> SwamiG Institute · Ifá • Isésé • Orisha · All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

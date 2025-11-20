@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <meta name="color-scheme" content="dark" />
+  <title>Opélé Practice Program | SwamiG Institute — $99 • Weekly Zoom • Certification Path</title>
+  <meta name="description" content="Begin your Opélé self-divination practice with weekly 1-hr Zoom support, structured modules, and a certification pathway. $99 entry. Module 1 available now." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Opélé Practice Program | SwamiG Institute" />
+  <meta property="og:description" content="Weekly Zoom • $99 entry • Module 1 open now • 5-module certification path." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myopele.com/" />
+  <meta property="og:image" content="https://swamiginstitute.github.io/SwamiG.gif" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Opélé Divination Program | SwamiG Institute" />
+  <meta name="twitter:description" content="Weekly Zoom • $99 entry • Module 1 open now • 5-module certification path." />
+  <meta name="twitter:image" content="https://swamiginstitute.github.io/SwamiG.gif" />
+
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --ink:#eaeaf2;
+      --muted:#b5b5c4;
+      --accent:#bb66ff;
+      --accent-muted:rgba(187,102,255,.18);
+      --accent-lineage:rgba(102,255,178,.35);
+      --radius:20px;
+      --card:#13131a;
+      --card2:#0f0f15;
+      --link:#b0a6ff;
+      --ok:#5ef39d;
+      --warn:#ffc857;
+      --lock1:#67e8f9; /* cyan */
+      --lock2:#f472b6; /* pink */
+      --lock3:#f59e0b; /* amber */
+      --lock4:#60a5fa; /* blue */
+    }
+    *{box-sizing:border-box}
+    html,body{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font:400 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+      background: radial-gradient(1200px 900px at 20% -10%, var(--accent-muted), transparent 60%),
+                  radial-gradient(900px 700px at 120% 20%, var(--accent-lineage), transparent 60%),
+                  var(--bg);
+      color:var(--ink);
+    }
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1080px;margin:0 auto;padding:24px}
+
+    /* Top bar */
+    .topbar{
+      display:flex;gap:12px;align-items:center;justify-content:center;
+      font-size:14px;color:var(--muted);padding:8px 12px;background:#0f0f15a8;backdrop-filter:blur(6px)
+    }
+    .topbar b{color:var(--ink)}
+
+    /* Header */
+    header{display:flex;align-items:center;gap:16px;padding:16px 0 8px}
+    header img{height:56px;width:auto;border-radius:12px;filter:drop-shadow(0 0 18px rgba(102,255,178,.25))}
+    .brand h1{margin:0;font-size:22px;letter-spacing:.2px}
+    .brand .sub{margin-top:2px;color:var(--muted);font-size:14px}
+
+    /* Hero */
+    .hero{
+      display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center;margin-top:10px
+    }
+    .card{
+      background:linear-gradient(180deg, var(--card), var(--card2));
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25)
+    }
+    .hero h2{margin:0 0 8px;font-size:28px}
+    .hero p.lead{margin:0 0 14px;color:var(--muted)}
+    .checklist{margin:12px 0 18px;padding:0;list-style:none}
+    .checklist li{margin:6px 0;padding-left:26px;position:relative}
+    .checklist li:before{
+      content:"";position:absolute;left:0;top:6px;width:14px;height:14px;border-radius:50%;
+      background:var(--ok);box-shadow:0 0 0 3px rgba(94,243,157,.12)
+    }
+
+    /* CTA */
+    .ctaRow{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:12px 18px;border-radius:14px;border:1px solid rgba(255,255,255,.12);
+      background:rgba(187,102,255,.12);
+      color:var(--ink);text-decoration:none;font-weight:600
+    }
+    .btn:hover{background:rgba(187,102,255,.2);text-decoration:none}
+    .btn.secondary{background:transparent}
+    .price{font-weight:700;padding:6px 10px;border-radius:10px;background:rgba(187,102,255,.15);border:1px dashed rgba(255,255,255,.15);font-size:14px}
+
+    /* Modules */
+    .modules{margin-top:26px}
+    .modules h3{margin:0 0 10px;font-size:22px}
+    .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+    .mod{padding:16px;border-radius:16px;border:1px solid rgba(255,255,255,.08);background:#121219}
+    .mod h4{margin:8px 0 6px;font-size:16px}
+    .mod p{margin:0;color:var(--muted);font-size:14px;min-height:44px}
+    .mod .badge{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:#cbd5e1;margin-top:8px}
+    .mod a.download{display:inline-block;margin-top:10px;font-weight:600}
+
+    /* Accordion (How it works / FAQ) */
+    details{
+      background:#11121a;border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:14px 16px;margin:12px 0
+    }
+    summary{cursor:pointer;font-weight:700}
+    details p, details ul{color:var(--muted)}
+    details ul{margin:8px 0 0 18px}
+
+    /* Footer */
+    footer{margin:34px 0 12px;color:var(--muted);font-size:14px}
+    .footerGrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .tiny{opacity:.65;font-size:12px}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      header{flex-wrap:wrap}
+    }
+    @media (max-width: 520px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    /* subtle pulse for the tiny callout */
+    .pulse{
+      animation:pulse 3s ease-in-out infinite;
+    }
+    @keyframes pulse{
+      0%,100%{opacity:.56; transform:translateY(0)}
+      50%{opacity:.88; transform:translateY(-2px)}
+    }
+    /* SVG lock helpers */
+    .lock{vertical-align:-3px}
+  </style>
+
+  <!-- Schema.org: Organization + Course -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"SwamiG Institute",
+    "url":"https://myopele.com/",
+    "publisher":{"@type":"Organization","name":"SwamiG Institute","logo":"https://swamiginstitute.github.io/SwamiG.gif"},
+    "potentialAction":{"@type":"SearchAction","target":"https://myopele.com/?q={q}","query-input":"required name=q"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Course",
+    "name":"Opélé Practice Program",
+    "description":"Five-module pathway to establish a reliable Opélé self-divination practice with weekly live Zoom support and certification eligibility after Module 5.",
+    "provider":{"@type":"Organization","name":"SwamiG Institute","sameAs":"https://swamiginstitute.com"},
+    "hasCourseInstance":{
+      "@type":"CourseInstance",
+      "courseMode":"Online",
+      "inLanguage":"en",
+      "location":"Remote (Zoom)",
+      "startDate":"2025-09-01",
+      "offers":{"@type":"Offer","price":"99","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://www.paypal.com/ncp/payment/5M949GKNMDHJN"}
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Slim top bar -->
+  <div class="topbar">
+    <span class="pulse">Weekly Zoom •</span>
+    <b>$99 one-time</b>
+    <span>• Module 1 open now</span>
+  </div>
+
+  <div class="wrap">
+    <!-- Header -->
+    <header aria-label="Site header">
+      <img src="https://swamiginstitute.github.io/SwamiG.gif" alt="SwamiG Institute logo" />
+      <div class="brand">
+        <h1>Opélé Divination Program</h1>
+        <div class="sub">Providing lessons for enlightenment seekers of the diaspora.</div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="card">
+        <h2>Begin your Opélé self-divination practice</h2>
+        <p class="lead">Structured, steady, and supported. Weekly 1-hour live Zoom. Documented practice logs. Certification pathway after Module 5.</p>
+        <ul class="checklist" aria-label="What you get">
+          <li>5 modules with clear milestones</li>
+          <li>Weekly 1-hr live Zoom check-ins</li>
+          <li>Daily casting & practice logs</li>
+          <li>Certification eligibility after Module 5</li>
+        </ul>
+        <div class="ctaRow" role="group" aria-label="Primary actions">
+          <a class="btn" href="https://www.paypal.com/ncp/payment/5M949GKNMDHJN" aria-label="Enroll now via PayPal for $99">
+            Enroll for $99 (PayPal)
+          </a>
+          <a class="btn secondary" href="https://cash.app/$DrSwamiG?amount=99" aria-label="Pay $99 via Cash App $DrSwamiG">
+            Cash App $DrSwamiG
+          </a>
+          <span class="price" aria-hidden="true">$99 • lifetime access to program updates</span>
+        </div>
+        <p style="margin-top:12px" class="tiny">
+          After payment you’ll receive your Zoom link and onboarding email (check spam). Direct support: <a href="mailto:Baba@SwamiGInstitute.com">Baba@SwamiGInstitute.com</a> • 70-888-Swami
+        </p>
+      </div>
+
+      <div class="card" aria-label="How it works">
+        <h3 style="margin:0 0 10px">How it works</h3>
+        <details open>
+          <summary>1) Start with Module 1 (open now)</summary>
+          <p>Download Lesson 1, follow the daily practice instructions, and begin recording your casting logs.</p>
+          <ul>
+            <li>Practice target: consistent daily sessions</li>
+            <li>Keep a simple log (date/time, key insights)</li>
+            <li>Bring questions to the weekly Zoom</li>
+          </ul>
+        </details>
+        <details>
+          <summary>2) Weekly 1-hr Zoom</summary>
+          <p>We meet weekly. You’ll get the day/time and link in your onboarding email after payment.</p>
+        </details>
+        <details>
+          <summary>3) Certification pathway</summary>
+          <p>After completing Modules 1–5 and demonstrating consistent practice via your logs, you’ll be eligible for certification review.</p>
+        </details>
+        <details>
+          <summary>FAQ & eligibility (short)</summary>
+          <p><em style="opacity:.8">Only initiates — priests or priestesses — are eligible to attend.</em></p>
+          <p class="tiny">Language kept discreet by design. See <a href="#terms">Terms</a> for more.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Modules -->
+    <section class="modules">
+      <h3>Curriculum overview</h3>
+      <div class="grid" role="list">
+        <!-- Module 1: OPEN -->
+        <article class="mod" role="listitem" aria-labelledby="m1-title">
+          <div class="badge">
+            <!-- Open lock (green) -->
+            <svg class="lock" width="20" height="20" viewBox="0 0 24 24" role="img" aria-label="Open lock — Module 1 available">
+              <path fill="#5ef39d" d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4m6-6h-8a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2M8 9a4 4 0 0 1 8 0h-2a2 2 0 1 0-4 0H8z"/>
+            </svg>
+            <strong>Open now</strong>
+          </div>
+          <h4 id="m1-title">Module 1 — Foundations</h4>
+          <p>Setup, posture, cadence, record-keeping, and first cast interpretations.</p>
+          <a class="download" href="/lesson-1.pdf" aria-label="Download Module 1 Lesson PDF">Download Lesson 1 (PDF)</a>
+          <div class="tiny" style="margin-top:6px;opacity:.75">Optional: <a href="/lesson-1-preview.html">Preview online</a></div>
+        </article>
+
+        <!-- Module 2: LOCKED cyan -->
+        <article class="mod" role="listitem" aria-labelledby="m2-title" aria-disabled="true">
+          <div class="badge">
+            <!-- Closed lock cyan -->
+            <svg class="lock" width="20" height="20" viewBox="0 0 24 24" role="img" aria-label="Locked — complete prior module">
+              <path fill="var(--lock1)" d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4m6-6h-8a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2M12 3a4 4 0 0 1 4 4v2h-2V7a2 2 0 1 0-4 0v2H8V7a4 4 0 0 1 4-4z"/>
+            </svg>
+            <strong>Locked</strong>
+          </div>
+          <h4 id="m2-title">Module 2 — Patterns</h4>
+          <p>Strengthening recognition, journaling discipline, practical Q&A.</p>
+          <div class="tiny">Unlocks after Module 1 completion.</div>
+        </article>
+
+        <!-- Module 3: LOCKED pink -->
+        <article class="mod" role="listitem" aria-labelledby="m3-title" aria-disabled="true">
+          <div class="badge">
+            <svg class="lock" width="20" height="20" viewBox="0 0 24 24" role="img" aria-label="Locked — complete prior module">
+              <path fill="var(--lock2)" d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4m6-6h-8a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2M12 3a4 4 0 0 1 4 4v2h-2V7a2 2 0 1 0-4 0v2H8V7a4 4 0 0 1 4-4z"/>
+            </svg>
+            <strong>Locked</strong>
+          </div>
+          <h4 id="m3-title">Module 3 — Depth & Discernment</h4>
+          <p>Refining questions, calibrating signals, documentable outcomes.</p>
+          <div class="tiny">Unlocks after Module 2 completion.</div>
+        </article>
+
+        <!-- Module 4: LOCKED amber -->
+        <article class="mod" role="listitem" aria-labelledby="m4-title" aria-disabled="true">
+          <div class="badge">
+            <svg class="lock" width="20" height="20" viewBox="0 0 24 24" role="img" aria-label="Locked — complete prior module">
+              <path fill="var(--lock3)" d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4m6-6h-8a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2M12 3a4 4 0 0 1 4 4v2h-2V7a2 2 0 1 0-4 0v2H8V7a4 4 0 0 1 4-4z"/>
+            </svg>
+            <strong>Locked</strong>
+          </div>
+          <h4 id="m4-title">Module 4 — Integration</h4>
+          <p>Consistent practice through varied life contexts; case write-ups.</p>
+          <div class="tiny">Unlocks after Module 3 completion.</div>
+        </article>
+
+        <!-- Module 5: LOCKED blue -->
+        <article class="mod" role="listitem" aria-labelledby="m5-title" aria-disabled="true">
+          <div class="badge">
+            <svg class="lock" width="20" height="20" viewBox="0 0 24 24" role="img" aria-label="Locked — complete prior module">
+              <path fill="var(--lock4)" d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4m6-6h-8a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2M12 3a4 4 0 0 1 4 4v2h-2V7a2 2 0 1 0-4 0v2H8V7a4 4 0 0 1 4-4z"/>
+            </svg>
+            <strong>Locked</strong>
+          </div>
+          <h4 id="m5-title">Module 5 — Certification Readiness</h4>
+          <p>Demonstration via logs, review rubric, readiness interview.</p>
+          <div class="tiny">Unlocks after Module 4 completion.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Secondary CTA -->
+    <section class="card" style="margin-top:18px">
+      <h3 style="margin:0 0 6px">Ready to begin?</h3>
+      <p style="margin:0 0 10px;color:var(--muted)">Start with Module 1 today. Join the next weekly Zoom and get direct guidance.</p>
+      <div class="ctaRow">
+        <a class="btn" href="https://www.paypal.com/ncp/payment/5M949GKNMDHJN">Enroll for $99 (PayPal)</a>
+        <a class="btn secondary" href="https://cash.app/$DrSwamiG?amount=99">Cash App $DrSwamiG</a>
+      </div>
+    </section>
+
+    <!-- Terms & small print -->
+    <section id="terms" class="card" style="margin-top:18px">
+      <h3 style="margin:0 0 8px">Terms, privacy & eligibility</h3>
+      <p class="tiny" style="margin:0 0 6px">
+        This program is designed to help establish a reliable personal self-divination practice with the classic Opélé.
+        <em>Only initiates — priests or priestesses — are eligible to attend.</em>
+      </p>
+      <p class="tiny" style="margin:0">
+        Payments are processed via PayPal or Cash App. By enrolling you agree to receive onboarding emails containing access instructions (e.g., Zoom link). For questions or special circumstances, contact
+        <a href="mailto:Baba@SwamiGInstitute.com">Baba@SwamiGInstitute.com</a>.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer aria-label="Site footer">
+      <div class="footerGrid">
+        <div>
+          <div>Contact: <a href="mailto:Baba@SwamiGInstitute.com">Baba@SwamiGInstitute.com</a> • 70-888-Swami</div>
+          <div>Site: <a href="https://swamiginstitute.com">SwamiGInstitute.com</a></div>
+        </div>
+        <div style="text-align:right">
+          <div>Support this path: <a href="https://www.paypal.com/ncp/payment/5M949GKNMDHJN">Donate</a></div>
+          <div class="tiny" style="margin-top:6px;opacity:.6">supported by Amen (Obara) / Heru (Oyeku)</div>
+        </div>
+      </div>
+      <div style="margin-top:14px;text-align:center">
+        Michigan-based nonprofit — <span title="IRS determination pending">501(c)(3) recognition pending</span>
+      </div>
+      <div class="tiny" style="margin-top:8px;text-align:center;opacity:.7">
+        © <span id="y"></span> SwamiG Institute. All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // simple year stamp
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
